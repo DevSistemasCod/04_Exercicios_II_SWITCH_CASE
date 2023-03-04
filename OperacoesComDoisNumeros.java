@@ -25,9 +25,9 @@ public class OperacoesComDoisNumeros {
     }
 	
 	 public static void main(String[] args) {
-		 int opcao;
-		 double numero1, numero2, media, diferenca, produto, divisao;
-		 Scanner lerDados = new Scanner(System.in);
+	     int opcao;
+             double numero1, numero2, media, diferenca, produto, divisao;
+	     Scanner lerDados = new Scanner(System.in);
 
 	        
 	     System.out.println("Digite o primeiro número:");
@@ -75,6 +75,7 @@ public class OperacoesComDoisNumeros {
 	                System.out.println("Opção inválida.");
 	                break;
 	        }
+		lerDados.close(); 
 	    }
 
 	
