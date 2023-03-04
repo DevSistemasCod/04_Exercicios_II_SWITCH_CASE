@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class ClassificacaoDeProdutos {
 	  public static void main(String[] args) {
-		  int codigo;  
-		  String classificacao;	
-		  Scanner scanner = new Scanner(System.in);
+	      int codigo;  
+	      String classificacao;	
+	      Scanner lerDados = new Scanner(System.in);
 
 		  
 	      // lê o código do produto
 	      System.out.println("Digite o código do produto:");
-	      codigo = scanner.nextInt();
+	      codigo = lerDados.nextInt();
 
 	      // verifica a classificação do produto
 	      switch (codigo) {
@@ -47,5 +47,6 @@ public class ClassificacaoDeProdutos {
 
 	       // exibe a classificação na tela
 	       System.out.printf("O produto de código %d é classificado como %s.\n", codigo, classificacao);
+	       lerDados.close();	  
 	    }
 	}
